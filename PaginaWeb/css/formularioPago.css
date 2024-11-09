@@ -1,0 +1,168 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header */
+
+
+header {
+    background-color:white;
+    padding: 15px;
+    
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+    
+}
+
+header nav ul li {
+    
+    margin-right: 60px;
+}
+
+header nav ul li.iniciarS {
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+
+header nav ul li img.logo{
+    width: 70px;
+    height: 70px;
+    
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.botonRegistrarse{
+    color: white;
+    background-color: #000;
+    align-self: flex-end;
+    height: 40px;
+    width: 100px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+
+.nombrePaginaNav{
+    margin-left: 100%;
+    margin-right: 60px;
+    font-size: 50px;
+}
+
+header nav ul li a.cart img {
+    width: 40px;
+}
+
+
+main {
+    background: url('../FotosPaginaWeb/fotoFormularioPago.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pago {
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 100px;
+    
+}
+
+.pago h1 {
+    font-family: 'Press Start 2P', cursive; /* Fuente estilo videojuegos retro */
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 100px;
+}
+
+.pago form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pago form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 105%;
+}
+
+.pago form button {
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 105%;
+}
+
+.register-section form button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-media {
+    margin-bottom: 20px;
+}
+
+footer ul img.logoFooter{
+    text-align: left;
+    width: 70px;
+    height: 70px;
+}
+
+footer .social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-media ul li {
+    display: inline;
+}
+
+
+
+footer .social-media ul li img {
+    width: 40px;
+}
+
+
+footer p {
+    font-size: 14px;
+}

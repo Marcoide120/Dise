@@ -1,0 +1,166 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+/* Encabezado */
+header {
+    background-color:white;
+    padding: 15px;
+    
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    
+    
+}
+
+header nav ul li {
+    margin-left: 10px;
+    margin-right: 60px;
+}
+
+header nav ul li img.logo{
+    width: 70px;
+    height: 70px;
+    
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.botonRegistrarse{
+    color: white;
+    background-color: #000;
+    height: 40px;
+    width: 100px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+
+.nombrePaginaNav{
+    font-size: 50px;
+}
+
+header nav ul li a.cart img {
+    width: 40px;
+}
+
+/* Sección de producto */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #444;
+    
+}
+
+.producto {
+    color: white;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 70%;
+    
+    
+}
+
+.imagen-producto img {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.informacion-producto {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.precio {
+    font-size: 22px;
+    
+}
+
+.descripcion {
+    text-align: center;
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 55%;
+    margin-bottom: 40%;
+}
+
+.añadir-carrito, .comprar-ahora {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.añadir-carrito:hover, .comprar-ahora:hover {
+    background-color: #218838;
+}
+
+/* Pie de página */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-media {
+    margin-bottom: 20px;
+}
+
+footer ul img.logoFooter{
+    text-align: left;
+    width: 70px;
+    height: 70px;
+}
+
+footer .social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-media ul li {
+    display: inline;
+}
+
+
+
+footer .social-media ul li img {
+    width: 40px;
+}
+
+
+footer p {
+    font-size: 14px;
+}
