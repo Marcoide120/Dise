@@ -52,7 +52,18 @@
                     <source src="./FotosPaginaWeb/Skyrim Theme Song - Full (Dovahkiin Song).mp3">
                 </audio>
             </div>
-            <img src="./FotosPaginaWeb/Elden_ring.png" alt="Elden Ring Image" class="imagenJuego">
+            <div class="slider">
+                <div class="slides">
+                    <!-- Cada imagen dentro de un contenedor -->
+                    <div class="slide"><img src="./FotosPaginaWeb/Elden_ring.png" alt="Elden Ring"></div>
+                    <div class="slide"><img src="./FotosPaginaWeb/elden-ring-shadow-of-the-erdtree-first-impressions-of-the-bi_ehm3.jpg" alt="Elden Ring"></div>
+                    <div class="slide"><img src="./FotosPaginaWeb/ss_e0316c76f8197405c1312d072b84331dd735d60b.1920x1080.jpg" alt="Elden Ring"></div>
+                    <div class="slide"><img src="./FotosPaginaWeb/2658fa07-b731-496e-9051-7a06abd8fcca.jpg" alt="Elden Ring"></div>
+                </div>
+                <!-- Botones de navegación -->
+                <button id="atras" class="botonAtras" onclick="moveSlide(-1)">&#10094;</button>
+                <button id="delante" class="botonSiguiente" onclick="moveSlide(1)">&#10095;</button>
+            </div>
         </section>
 
         <!-- Sección Black Myth: Wukong -->

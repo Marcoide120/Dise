@@ -156,6 +156,66 @@ header nav ul li a.cart img {
     height: 500px;
 }
 
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    height: 500px;
+}
+
+#delante {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#atras {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.botonAtras {
+    left: 10px;
+}
+
+.botonSiguiente {
+    right: 10px;
+}
+
 
 footer {
     background-color: #000;
