@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Press Start 2P', cursive;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -92,7 +92,6 @@ main {
 }
 
 .registro h2 {
-    font-family: 'Press Start 2P', cursive; /* Fuente estilo videojuegos retro */
     font-size: 24px;
     color: #333;
     margin-bottom: 100px;

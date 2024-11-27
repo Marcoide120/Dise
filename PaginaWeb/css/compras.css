@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive;
     background-color: #4f4f4f;
 }
 
@@ -90,21 +90,20 @@ main h1 {
     color: white;
     width: 25%;
     text-align: center;
-    margin-bottom: 20%;
+    margin-bottom: 2%;
 }
 
 .juego img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 10px;
     transition: opacity 2s,
-    width 1s,
-    height 1s;
+    width 2s,
+    height 2s;
 }
 
 .juego img:hover{
 width: 400px;
-height: 300px;
+height: 250px;
 }
 
 .nombrePrecio{
@@ -117,13 +116,15 @@ height: 300px;
 }
 
 .nombreJuego {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
 .precio {
     font-size: 22px;
     margin-bottom: 10px;
+    
+
 }
 
 .buttons button {
