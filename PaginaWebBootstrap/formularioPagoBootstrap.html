@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de pago</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="./FotosPaginaWeb/logo2Icono.ico">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/formularioPagoBootstrap.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img class="logo" src="./FotosPaginaWeb/logo2.png" alt="Logo"></li>
+                <li><a href="./web.html">Noticias</a></li>
+                <li><a href="./compras.html">Compras</a></li>
+                <li><h1 class="nombrePaginaNav">Infogames</h1></li>
+                <li class="iniciarS"><a href="./formularioInicioDeSesion.html">Iniciar Sesión</a></li>
+                <li><a><button class="botonRegistrarse">Registrarse</button></a></li>
+                <li><a href="./carrito.html" class="cart"><img src="./FotosPaginaWeb/carritoWeb2.png" alt="Carrito"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main class="payment-page page">
+    <section class="payment-form dark">
+      <div class="container">
+        <div class="block-heading">
+          <h1>Formulario de Pago</h1>
+        </div>
+        <form>
+          <div class="products">
+            <h3 class="title">Checkout</h3>
+            <div class="item">
+              <span class="price">$200</span>
+              <p class="item-name">Product 1</p>
+              <p class="item-description">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="item">
+              <span class="price">$120</span>
+              <p class="item-name">Product 2</p>
+              <p class="item-description">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="total">Total<span class="price">$320</span></div>
+          </div>
+          <div class="card-details">
+            <h3 class="title">Credit Card Details</h3>
+            <div class="row">
+              <div class="form-group col-sm-7">
+                <label for="card-holder">Nombre del titular de la tarjeta</label>
+                <input id="card-holder" type="text" class="form-control" placeholder="Nombre del titular de la tarjeta" aria-label="Card Holder" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-group col-sm-5">
+                <label for="">Fecha de caducidad</label>
+                <div class="input-group expiration-date">
+                  <input type="text" class="form-control" placeholder="MM" aria-label="MM" aria-describedby="basic-addon1">
+                  <span class="date-separator">/</span>
+                  <input type="text" class="form-control" placeholder="YY" aria-label="YY" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="form-group col-sm-8">
+                <label for="card-number">Número de la tarjeta</label>
+                <input id="card-number" type="text" class="form-control" placeholder="Número de la tarjeta" aria-label="Card Holder" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-group col-sm-4">
+                <label for="cvc">CVC</label>
+                <input id="cvc" type="text" class="form-control" placeholder="CVC" aria-label="Card Holder" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-group col-sm-12">
+                <button type="button" class="btn btn-primary btn-block ">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="social-media">
+        <p>¡Síguenos en nuestras redes sociales!</p></br>
+        
+        <ul>
+            <img class="logoFooter" src="./FotosPaginaWeb/logo2.png" alt="Logo">
+            <li><a href="#"><img src="./FotosPaginaWeb/logoFweb2.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="./FotosPaginaWeb/Instagram_iconWeeb.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="./FotosPaginaWeb/Telegram_logoWeb.png" alt="Telegram"></a></li>
+            <li><a href="#"><img src="./FotosPaginaWeb/logoXweb.png" alt="X"></a></li>
+            <li><a href="#"><img src="./FotosPaginaWeb/tiktokLogoWeb2.png" alt="TikTok"></a></li>
+            <li><a href="#"><img src="./FotosPaginaWeb/youtubeLogoWeb.png" alt="Youtube"></a></li>
+        </ul>
+    </div>
+    <p>&copy; 2024 - 2028 Infogames - Política - Términos</p>
+</footer>
+</body>
+</body>
+</html>
