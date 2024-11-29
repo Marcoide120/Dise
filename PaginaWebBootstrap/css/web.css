@@ -6,12 +6,13 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    /* font-family: Arial, sans-serif; */
     color: #333;
     background-color: #f4f4f4;
 }
 
-/* header {
+header {
     background-color:white;
     padding: 15px;
     
@@ -67,7 +68,7 @@ header nav ul li a {
 
 header nav ul li a.cart img {
     width: 40px;
-} */
+}
 
 .portada {
     display: flex;
@@ -83,6 +84,29 @@ header nav ul li a.cart img {
     margin-left: 150%;
     width: 550px;
 }
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.floating-button:hover {
+    background-color: #0056b3;
+    }
 
 
 .portada h1 {
@@ -105,6 +129,15 @@ header nav ul li a.cart img {
     justify-content: space-between;
     padding: 40px;
     background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.noticiasJuegosMedio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #e3e3e3;
     margin-bottom: 20px;
 }
 
@@ -131,6 +164,66 @@ header nav ul li a.cart img {
 .imagenJuego {
     width: 700px;
     height: 500px;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    height: 500px;
+}
+
+#delante {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#atras {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.botonAtras {
+    left: 10px;
+}
+
+.botonSiguiente {
+    right: 10px;
 }
 
 
@@ -172,4 +265,3 @@ footer .social-media ul li img {
 footer p {
     font-size: 14px;
 }
-

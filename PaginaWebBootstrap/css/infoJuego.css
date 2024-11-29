@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive;
     color: #333;
     background-color: #f4f4f4;
 }
@@ -81,9 +81,19 @@ main {
 }
 
 .imagen-producto img {
-    width: 300px;
-    height: 180px;
+    width: 350px;
+    height: 200px;
     border-radius: 10px;
+}
+
+.imagen-producto{
+    height: 200px;
+}
+
+.video{
+    width:500px;
+    height:500px;
+    
 }
 
 .informacion-producto {
@@ -100,7 +110,14 @@ main {
 .descripcion {
     text-align: center;
     margin-left: 40%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+    margin-top: -25%;
+}
+
+.descripcion p{
+
+margin-top: -14%;
+
 }
 
 .botones {
@@ -108,7 +125,7 @@ main {
     gap: 10px;
     align-items: center;
     margin-left: 55%;
-    margin-bottom: 40%;
+    margin-bottom: 20%;
 }
 
 .añadir-carrito, .comprar-ahora {
@@ -159,7 +176,6 @@ footer .social-media ul li {
 footer .social-media ul li img {
     width: 40px;
 }
-
 
 footer p {
     font-size: 14px;
