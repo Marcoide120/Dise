@@ -204,42 +204,43 @@ header nav ul li a.cart img {
         width: 100%;
     }
 
-    footer {
-        background-color: #000;
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-    }
-    
-    footer .social-media {
-        margin-bottom: 20px;
-    }
-    
-    footer ul img.logoFooter{
-        text-align: left;
-        width: 70px;
-        height: 70px;
-    }
-    
-    footer .social-media ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-    
-    footer .social-media ul li {
-        display: inline;
-    }
-    
-    
-    
-    footer .social-media ul li img {
-        width: 40px;
-    }
-    
-    
-    footer p {
-        font-size: 14px;
-    }
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-media {
+    margin-bottom: 20px;
+}
+
+footer ul img.logoFooter{
+    text-align: left;
+    width: 70px;
+    height: 70px;
+}
+
+footer .social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-media ul li {
+    display: inline;
+}
+
+
+
+footer .social-media ul li img {
+    width: 40px;
+}
+
+
+footer p {
+    font-size: 14px;
 }
