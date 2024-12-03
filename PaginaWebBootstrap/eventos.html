@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Gaming</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background-color: #343a40;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .event-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="text-center">
+            <h1 class="display-4 fw-bold">¡Sumérgete en los mejores eventos de videojuegos!</h1>
+            <p class="lead">Conoce, juega y disfruta de los eventos más emocionantes.</p>
+        </div>
+    </section>
+
+    <!-- Sección de eventos -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Próximos Eventos</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card event-card border-0 shadow">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Evento 1">
+                        <div class="card-body">
+                            <h5 class="card-title">GameCon 2024</h5>
+                            <p class="card-text">Fecha: 15 de diciembre, 2024 <br> Ubicación: Centro de Convenciones, México</p>
+                            <a href="#" class="btn btn-outline-primary">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card border-0 shadow">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Evento 2">
+                        <div class="card-body">
+                            <h5 class="card-title">eSports Championship</h5>
+                            <p class="card-text">Fecha: 22 de enero, 2025 <br> Ubicación: Arena Global, Los Ángeles</p>
+                            <a href="#" class="btn btn-outline-primary">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card border-0 shadow">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Evento 3">
+                        <div class="card-body">
+                            <h5 class="card-title">VR Gaming Expo</h5>
+                            <p class="card-text">Fecha: 12 de febrero, 2025 <br> Ubicación: Expo Center, Berlín</p>
+                            <a href="#" class="btn btn-outline-primary">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>¿Tienes alguna pregunta?</h5>
+                    <p>Envíanos tus dudas o consulta sobre cómo participar en los eventos.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-envelope"></i> Email: eventosgaming@example.com</li>
+                        <li><i class="bi bi-phone"></i> Teléfono: +34 123 456 789</li>
+                        <li><i class="bi bi-geo-alt"></i> Dirección: Calle Gaming 123, Madrid</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Tu correo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Eventos Gaming. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
