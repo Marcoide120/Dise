@@ -1,0 +1,24 @@
+*{
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+.hero {
+    background-color: #343a40;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.event-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+}

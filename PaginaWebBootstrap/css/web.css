@@ -226,6 +226,16 @@ button:hover {
     right: 10px;
 }
 
+.botonesEventos{
+    color: white;
+    background-color: #000;
+    align-self: flex-end;
+    height: 40px;
+    width: 100px;
+    border-radius: 10%;
+    cursor: pointer;
+    margin-top: 8%;
+}
 
 footer {
     background-color: #000;
