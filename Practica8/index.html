@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../PaginaWeb/FotosPaginaWeb/logo2Icono.ico" type="image/x-icon">
+<title>Inicio Práctica 8</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #0d1117;
+        font-family: 'Poppins', sans-serif;
+        color: #c9d1d9;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        font-size: 3.5rem;
+        letter-spacing: 3px;
+        color: white;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 80vh;
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.75rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .grid-item:hover {
+        filter: brightness(140%);
+        transform: translateY(-12px) scale(1.02);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    }
+    
+    .grid-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.15);
+        transition: all 0.5s ease;
+    }
+    
+    .grid-item:hover::before {
+        left: 100%;
+    }
+    
+    .red {
+        background-color: #ff5555;
+    }
+    
+    .blue {
+        background-color: #5555ff;
+    }
+    
+    .green {
+        background-color: #3cb43c;
+    }
+    
+    .violet {
+        background-color: #aa55ff;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+        z-index: 1;
+    }
+</style>
+</head>
+<body>
+    <h1>Práctica 8 - Marcos García Castañeda</h1>
+    <div class="grid-container">
+        <a href="#" class="grid-item red">Gestión Elementos JS</a>
+        <a href="#" class="grid-item blue">Gestión Elementos JQuery</a>
+        <a href="#" class="grid-item green">Human Benchmark JS</a>
+        <a href="#" class="grid-item violet">Human Benchmark JQuery</a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
