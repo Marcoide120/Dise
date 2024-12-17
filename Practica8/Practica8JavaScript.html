@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con imágenes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            width: 150px;
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <label for="color-picker">Selecciona un color:</label>
+    <input type="color" id="color-picker">
+    <button onclick="changeBackgroundColor()">Cambiar color de fondo</button>
+    <button onclick="addItem()">Añadir más elementos</button>
+
+    <div class="container" id="elementos">
+        <div class="item">
+            <img src="https://placekitten.com/150/150" alt="Imagen de un gatito">
+            <button onclick="changeImage(this)">Cambiar</button>
+            <button onclick="deleteItem(this)">Borrar</button>
+        </div>
+        <div class="item">
+            <img src="https://placekitten.com/150/150" alt="Imagen de un gatito">
+            <button onclick="changeImage(this)">Cambiar</button>
+            <button onclick="deleteItem(this)">Borrar</button>
+        </div>
+        <div class="item">
+            <img src="https://placekitten.com/150/150" alt="Imagen de un gatito">
+            <button onclick="changeImage(this)">Cambiar</button>
+            <button onclick="deleteItem(this)">Borrar</button>
+        </div>
+        <div class="item">
+            <img src="https://placekitten.com/150/150" alt="Imagen de un gatito">
+            <button onclick="changeImage(this)">Cambiar</button>
+            <button onclick="deleteItem(this)">Borrar</button>
+        </div>
+    </div>
+
+    <script>
+        function changeBackgroundColor() {
+            const color = document.getElementById("color-picker").value;
+            document.body.style.backgroundColor = color;
+        }
+
+        function addItem() {
+            const container = document.getElementById("elementos");
+            const newItem = document.createElement("div");
+            newItem.classList.add("item");
+            newItem.innerHTML = `
+                <img src="https://placekitten.com/150/150" alt="Imagen de un gatito">
+                <button onclick="changeImage(this)">Cambiar</button>
+                <button onclick="deleteItem(this)">Borrar</button>
+            `;
+            container.appendChild(newItem);
+        }
+
+        function changeImage(button) {
+            const newImageUrl = prompt("Introduce la URL de la nueva imagen:");
+            const img = button.parentElement.querySelector("img");
+            img.src = newImageUrl;
+        }
+
+        function deleteItem(button) {
+            const item = button.parentElement;
+            item.remove();
+        }
+    </script>
+</body>
+</html>
