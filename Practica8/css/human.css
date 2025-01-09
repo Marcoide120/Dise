@@ -1,0 +1,67 @@
+/* Reset general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+#main {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estados */
+#main.initial {
+    background-color: #4caf50; /* Verde */
+    color: #ffffff;
+}
+
+#main.waiting {
+    background-color: #ffc107; /* Amarillo */
+    color: #ffffff;
+}
+
+#main.ready {
+    background-color: #f44336; /* Rojo */
+    color: #ffffff;
+}
+
+#main.final {
+    background-color: #2196f3; /* Azul */
+    color: #ffffff;
+}
+
+/* Mensaje */
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
