@@ -1,27 +1,54 @@
-function changeBackgroundColor() {
-    const color = document.getElementById("color-picker").value;
-    document.body.style.backgroundColor = color;
-}
+document.addEventListener("DOMContentLoaded", function () {
+    
+    document.getElementById("change-color").addEventListener("click", function () {
+        const color = document.getElementById("color-picker").value;
+        const items = document.querySelectorAll(".item");
+        items.forEach(item => {
+            item.style.backgroundColor = color;
+        });
+    });
 
-function addItem() {
-    const container = document.getElementById("container");
-    const newItem = document.createElement("div");
-    newItem.classList.add("item");
-    newItem.innerHTML = `
-        <img src="../Practica8/img/shrek3.jpg" alt="shrek">
-        <button onclick="changeImage(this)">Cambiar</button>
-        <button onclick="deleteItem(this)">Borrar</button>
-    `;
-    container.appendChild(newItem);
-}
 
-function changeImage(button) {
-    const newImageUrl = "../Practica8/img/shrek5.webp";
-    const img = button.parentElement.querySelector("img");
-    img.src = newImageUrl;
-}
+    document.getElementById("add-item").addEventListener("click", function () {
+        const newItem = document.createElement("div");
+        newItem.classList.add("item");
 
-function deleteItem(button) {
-    const item = button.parentElement;
-    item.remove();
-}
+        const img = document.createElement("img");
+        img.src = "../Practica8/img/shrek3.jpg";
+        img.alt = "Shrek";
+
+        const changeButton = document.createElement("button");
+        changeButton.textContent = "Cambiar";
+        changeButton.classList.add("change-image");
+
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Borrar";
+        deleteButton.classList.add("delete-item");
+
+        newItem.appendChild(img);
+        newItem.appendChild(changeButton);
+        newItem.appendChild(deleteButton);
+
+        document.getElementById("container").appendChild(newItem);
+    });
+
+
+    document.getElementById("container").addEventListener("click", function (event) {
+        if (event.target.classList.contains("change-image")) {
+            const newImageUrl = "../Practica8/img/shrek5.webp";
+            const img = event.target.parentNode.querySelector("img");
+            if (img) {
+                img.src = newImageUrl;
+            }
+        }
+    });
+
+    document.getElementById("container").addEventListener("click", function (event) {
+        if (event.target.classList.contains("delete-item")) {
+            const item = event.target.closest(".item");
+            if (item) {
+                item.remove();
+            }
+        }
+    });
+});
