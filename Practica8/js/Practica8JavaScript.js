@@ -8,7 +8,7 @@ function addItem() {
     const newItem = document.createElement("div");
     newItem.classList.add("item");
     newItem.innerHTML = `
-        <img src="https://placekitten.com/150/150" alt="Imagen de un gatito">
+        <img src="../Practica8/img/shrek3.jpg" alt="shrek">
         <button onclick="changeImage(this)">Cambiar</button>
         <button onclick="deleteItem(this)">Borrar</button>
     `;
@@ -16,7 +16,7 @@ function addItem() {
 }
 
 function changeImage(button) {
-    const newImageUrl = prompt("Introduce la URL de la nueva imagen:");
+    const newImageUrl = "../Practica8/img/shrek5.webp";
     const img = button.parentElement.querySelector("img");
     img.src = newImageUrl;
 }
