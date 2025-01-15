@@ -110,24 +110,6 @@ listado.map((fruta)=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       {/* <h1>El contador está a: {count}</h1><br/>
       <button onClick={handleClick}>Aumentar el contador</button> */}
       
