@@ -43,6 +43,7 @@ useEffect(countChange,[count])
   
   } */
 
+  let listado = ["manzana", "pera", "uva", "sandia", "melon", "platano", "kiwi", "naranja", "mandarina"]
 
     const [pokemon, setPokemon] = useState({
       id: -1, name: "SIN NOMBRE", weight: -1,
@@ -97,7 +98,13 @@ useEffect(countChange,[count])
 
 </section>
 
+<h2>Lista</h2>
+{
+listado.map((fruta)=>{
+  return (<p className='bg-blue-300'>{fruta}</p>)
+})
 
+}
 
 
 
